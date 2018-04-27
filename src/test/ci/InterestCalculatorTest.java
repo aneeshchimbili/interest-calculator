@@ -33,14 +33,14 @@ public class InterestCalculatorTest {
         assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(50000.0));
     }
 
-    // @Test
-    // public void shouldReturnCompoundInterestFor100Dollars20percentInterestFor2Years() throws Exception {
-    //     Double principal = 100.0;
-    //     Double percentageInterest = 20.0;
-    //     Double timeInYears = 2.0;
+    @Test
+    public void shouldReturnCompoundInterestFor100Dollars20percentInterestFor2Years() throws Exception {
+        Double principal = 100.0;
+        Double percentageInterest = 20.0;
+        Double timeInYears = 2.0;
 
-    //     assertThat(interestCalculator.calculateCompoundInterest(principal, percentageInterest, timeInYears), is(44.0));
-    // }
+        assertThat(interestCalculator.calculateCompoundInterest(principal, percentageInterest, timeInYears), is(44.0));
+    }
 
     // @Test(expected = RequiredInputNotPresentException.class)
     // public void shouldHandleNullInputs() throws Exception {
