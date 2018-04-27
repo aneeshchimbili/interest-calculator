@@ -55,4 +55,13 @@ public class InterestCalculatorTest {
 
         assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(500000.0));
     }
+
+    @Test
+    public void shouldReturnInterestAccruedForRateOf10PercentFor5YearsOnAnAmountOf10000000Dollars() throws Exception {
+        Double principal = 10000000.0;
+        Double percentageInterest = 10.0;
+        Double timeInYears = 5.0;
+
+        assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(5000000.0));
+    }
 }
