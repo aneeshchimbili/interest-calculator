@@ -42,8 +42,8 @@ public class InterestCalculatorTest {
         assertThat(interestCalculator.calculateCompoundInterest(principal, percentageInterest, timeInYears), is(44.0));
     }
 
-    // @Test(expected = RequiredInputNotPresentException.class)
-    // public void shouldHandleNullInputs() throws Exception {
-    //     interestCalculator.calculateSimpleInterest(1.0, 1.0, null);
-    // }
+    @Test(expected = RequiredInputNotPresentException.class)
+    public void shouldHandleNullInputs() throws Exception {
+        interestCalculator.calculateSimpleInterest(1.0, 1.0, null);
+    }
 }
