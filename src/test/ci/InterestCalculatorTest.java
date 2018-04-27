@@ -65,6 +65,7 @@ public class InterestCalculatorTest {
         assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(5000000.0));
     }
 
+    @Test
     public void shouldReturnInterestAccruedForRateOf10PercentFor5YearsOnAnAmountOf100Dollars() throws Exception {
         Double principal = 100.0;
         Double percentageInterest = 10.0;
@@ -73,27 +74,30 @@ public class InterestCalculatorTest {
         assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(50.0));
     }
 
-    public void shouldReturnInterestAccruedForRateOf10PercentFor5YearsOnAnAmountOf1000Dollars() throws Exception {
-        Double principal = 1000.0;
-        Double percentageInterest = 10.0;
-        Double timeInYears = 5.0;
+    // @Test
+    // public void shouldReturnInterestAccruedForRateOf10PercentFor5YearsOnAnAmountOf1000Dollars() throws Exception {
+    //     Double principal = 1000.0;
+    //     Double percentageInterest = 10.0;
+    //     Double timeInYears = 5.0;
 
-        assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(500.0));
-    }
+    //     assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(500.0));
+    // }
 
-    public void shouldReturnInterestAccruedForRateOf10PercentFor7YearsOnAnAmountOf1000Dollars() throws Exception {
-        Double principal = 1000.0;
-        Double percentageInterest = 10.0;
-        Double timeInYears = 7.0;
+    // @Test
+    // public void shouldReturnInterestAccruedForRateOf10PercentFor7YearsOnAnAmountOf1000Dollars() throws Exception {
+    //     Double principal = 1000.0;
+    //     Double percentageInterest = 10.0;
+    //     Double timeInYears = 7.0;
 
-        assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(700.0));
-    }
+    //     assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(700.0));
+    // }
 
-    public void shouldReturnInterestAccruedForRateOf10PercentFor7YearsOnAnAmountOf10000Dollars() throws Exception {
-        Double principal = 10000.0;
-        Double percentageInterest = 10.0;
-        Double timeInYears = 7.0;
+    // @Test
+    // public void shouldReturnInterestAccruedForRateOf10PercentFor7YearsOnAnAmountOf10000Dollars() throws Exception {
+    //     Double principal = 10000.0;
+    //     Double percentageInterest = 10.0;
+    //     Double timeInYears = 7.0;
 
-        assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(7000.0));
-    }
+    //     assertThat(interestCalculator.calculateSimpleInterest(principal, percentageInterest, timeInYears), is(7000.0));
+    // }
 }
